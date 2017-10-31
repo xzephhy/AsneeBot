@@ -12,19 +12,21 @@ Currently AsneeBot is being created in JavaScript, using my favourite editor, At
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const config = require("./config.json");
 
-client.on("ready", () => {
-  console.log("I am ready!");
-});
 
+// Set the prefix
+let prefix = "-";
 client.on("message", (message) => {
-  if (message.content.startsWith("ping")) {
+  // Exit and stop if the prefix is not there or if user is a bot
+  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+
+  if (message.content.startsWith(config.prefix + "ping")) {
     message.channel.send("pong!");
   } else
-
-  if (message.content.startsWith("foo")) {
+  if (message.content.startsWith(config.prefix + "foo")) {
     message.channel.send("bar!");
   }
 });
 
-client.login("")
+client.login(config.token);
