@@ -9,7 +9,7 @@ Currently AsneeBot is being created in JavaScript, using my favourite editor, At
 
 
 ## Code Example
-
+```js
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
