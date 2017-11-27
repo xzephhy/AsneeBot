@@ -5,7 +5,9 @@ However, ever since I've started taking programming as a hobby, this is a projec
 If you stumble across this page, there are some things you should know.
 
 
-Currently AsneeBot is being created in JavaScript, using my favourite editor, Atom. 
+Currently AsneeBot is being created in Python, using VSCode, a source editor i'm getting used too.
+
+This is just some old code, you can ignore this. 
 
 
 ## Code Example
